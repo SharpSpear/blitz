@@ -1,0 +1,36 @@
+.sidebar {
+  a {
+    color: rgba(137, 135, 150, 1);
+    padding: 15px 15px 12px 15px;
+  }
+
+  li {
+    &:hover {
+      background: #f1f6ff !important;
+      border-left: 2px solid #3257fb;
+      border-radius: 2px;
+      margin-left: -2px;
+    }
+  }
+}
+
+.activeProspect {
+  background: #f1f6ff !important;
+  border-left: 2px solid #3257fb;
+  border-radius: 2px;
+  margin-left: -2px;
+}
+
+.prospectList {
+  a {
+    color: rgba(137, 135, 150, 1);
+    padding: 15px 15px 12px 15px;
+
+    &:hover {
+      background: #f1f6ff !important;
+      border-left: 2px solid #3257fb;
+      border-radius: 2px;
+      margin-left: -2px;
+    }
+  }
+}

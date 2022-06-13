@@ -1,0 +1,68 @@
+{
+  "users": [
+    {
+      "email": "test@test.com",
+      "password": "test"
+    },
+    {
+      "email": "test2@test.com",
+      "password": "test"
+    },
+    {
+      "email": "test3@test.com",
+      "password": "test"
+    },
+    {
+      "email": "test4@test.com",
+      "password": "test"
+    },
+    {
+      "email": "test5@test.com",
+      "password": "test"
+    },
+    {
+      "email": "test6@test.com",
+      "password": "test"
+    },
+    {
+      "email": "test7@test.com",
+      "password": "test"
+    },
+    {
+      "email": "invitedUser@test.com",
+      "password": "test"
+    }
+  ],
+  "workspaces": [
+    {
+      "name": "Test Workspace",
+      "slug": "Test-Workspace",
+      "owner": 1,
+      "members": [2, 3]
+    },
+    {
+      "name": "Test Workspace 2",
+      "slug": "Test-Workspace-2",
+      "owner": 2,
+      "members": [4, 5]
+    },
+    {
+      "name": "Test Workspace 3",
+      "slug": "Test-Workspace-3",
+      "owner": 3,
+      "members": [6, 7]
+    },
+    {
+      "name": "Test Workspace 4",
+      "slug": "Test-Workspace-4",
+      "owner": 4,
+      "members": [1, 8]
+    },
+    {
+      "name": "Test Workspace 5",
+      "slug": "Test-Workspace-5",
+      "owner": 1,
+      "members": [2]
+    }
+  ]
+}

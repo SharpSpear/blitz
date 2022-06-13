@@ -1,0 +1,17 @@
+.emptyRecordCard {
+  z-index: 5;
+}
+.empty {
+  background: #eceff9;
+}
+.arrow {
+  border-radius: 1px;
+  width: 0px;
+  height: 0px;
+  border-top: 15px solid transparent;
+  border-bottom: 15px solid transparent;
+
+  border-left: 20px solid #ffffff;
+  margin-top: 15px;
+  z-index: 10;
+}

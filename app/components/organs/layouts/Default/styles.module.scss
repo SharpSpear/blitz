@@ -1,0 +1,27 @@
+.sidebar {
+  a {
+    color: rgba(137, 135, 150, 1);
+    padding: 15px 15px 12px 0px;
+  }
+
+  li {
+    &:hover {
+      background: #1AAD90 !important;
+      border-left: 2px solid #3257fb;
+      border-radius: 2px;
+      margin-left: -2px;
+    }
+  }
+}
+
+.activeLink {
+  background: #1AAD90 !important;
+  border-left: 2px solid #3257fb;
+  border-radius: 2px;
+  color: #1BBD90 !important;
+  margin-left: -2px;
+}
+
+.footerButtons {
+  width: 15.5rem;
+}

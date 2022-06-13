@@ -1,0 +1,28 @@
+.prospect {
+  background: #ffffff;
+  box-shadow: 6px 6px 30px rgba(98, 113, 165, 0.1);
+  border-radius: 5px;
+  margin: auto;
+  width: max-content;
+}
+
+.whyvote-container {
+  display: grid;
+  grid-template-columns: 5fr 1fr 5fr;
+}
+
+.create-new-record-button {
+  position: relative;
+  box-sizing: border-box;
+  &::before {
+    content: "";
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background-color: inherit;
+    clip-path: polygon(0 50%, 100% 100%, 100% 0);
+    transform: translateY(-50%);
+    left: -15px;
+    top: 50%;
+  }
+}

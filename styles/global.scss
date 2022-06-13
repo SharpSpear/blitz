@@ -1,0 +1,273 @@
+a {
+  color: "rgba(241, 246, 255, 0.7)";
+  cursor: pointer;
+
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+// @import url("//fonts.googleapis.com/css2?family=Montserrat&display=swap");
+
+@font-face {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: normal;
+  src: local("Montserrat Regular"), url("../public/fonts/Montserrat-Regular.ttf") format("woff");
+}
+
+@font-face {
+  font-family: "Montserrat-Bold";
+  font-style: normal;
+  font-weight: normal;
+  src: local("Montserrat Regular"), url("../public/fonts/Montserrat-Bold.ttf") format("woff");
+}
+
+@font-face {
+  font-family: "Montserrat-thin";
+  font-style: normal;
+  font-weight: normal;
+  src: local("Montserrat Regular"), url("../public/fonts/Montserrat-Thin.ttf") format("woff");
+}
+
+@font-face {
+  font-family: "Montserrat-Semi-Bold";
+  font-style: normal;
+  font-weight: normal;
+  src: local("Montserrat Regular"), url("../public/fonts/Montserrat-SemiBold.ttf") format("woff");
+}
+
+@font-face {
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: normal;
+  src: local("Raleway Regular"), url("../public/fonts/Raleway-Regular.ttf") format("woff");
+}
+
+@font-face {
+  font-family: "Raleway-Bold";
+  font-style: normal;
+  font-weight: normal;
+  src: local("Raleway Bold"), url("../public/fonts/Raleway-Bold.ttf") format("woff");
+}
+
+@font-face {
+  font-family: "Raleway-Extra-Bold";
+  font-style: normal;
+  font-weight: normal;
+  src: local("Raleway ExtraBold"), url("../public/fonts/Raleway-ExtraBold.ttf") format("woff");
+}
+
+@font-face {
+  font-family: "Open-Sans";
+  font-style: normal;
+  font-weight: normal;
+  src: local("Open Sans"), url("../public/fonts/OpenSans-Regular.ttf") format("woff");
+}
+
+@font-face {
+  font-family: "Open-Sans-SemiBold";
+  font-style: normal;
+  font-weight: normal;
+  src: local("Open Sans"), url("../public/fonts/OpenSans-SemiBold.ttf") format("woff");
+}
+
+@font-face {
+  font-family: "Open-Sans-ExtraBold";
+  font-style: normal;
+  font-weight: normal;
+  src: local("Open Sans"), url("../public/fonts/Raleway-ExtraBold.ttf") format("woff");
+}
+
+.font-Opensans {
+  font-family: "Open-Sans" !important;
+}
+
+.font-Opensans-SemiBold {
+  font-family: "Open-Sans-SemiBold" !important;
+}
+
+.font-Opensans-ExtraBold {
+  font-family: "Open-Sans-ExtraBold" !important;
+}
+
+.font-Raleway {
+  font-family: "Raleway" !important;
+}
+
+.font-Raleway-ExtraBold {
+  font-family: "Raleway-Extra-Bold" !important;
+}
+
+.font-Raleway-Bold {
+  font-family: "Raleway-Bold" !important;
+}
+
+.font-Montserrat {
+  font-family: "Montserrat" !important;
+}
+
+.font-Montserrat .bold,
+.font-Montserrat.bold {
+  font-family: "Montserrat-Bold" !important;
+  font-weight: "bold";
+}
+
+.font-Montserrat .thin,
+.font-Montserrat.thin {
+  font-family: "Montserrat-Bold" !important;
+  font-weight: "bold";
+}
+
+.font-Montserrat .bolder,
+.font-Montserrat.bolder {
+  font-family: "Montserrat-Bold" !important;
+  font-weight: "bolder";
+}
+
+.font-Montserrat .semi-bold,
+.font-Montserrat.semi-bold {
+  font-family: "Montserrat-Semi-Bold" !important;
+  font-weight: "bolder";
+}
+
+body {
+  // background-color: #e8ecf2;
+  background-color: #fff;
+}
+
+* {
+  font-family: "Montserrat" !important;
+}
+
+*:disabled {
+  cursor: not-allowed;
+  pointer-events: none;
+  user-select: none;
+}
+
+p {
+  font-family: "Montserrat";
+}
+
+.my-border {
+  --border-color: #7a7a7a;
+  --border-weight: 3px;
+  --dash-size: 25px;
+  --gap-size: 25px;
+  height: 3px;
+  position: relative;
+  // border-top: 3px dashed black;
+}
+
+.my-border:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background:
+// linear-gradient(90deg, var(--border-color) 100%, transparent 100%) top left no-repeat,
+    linear-gradient(
+      90deg,
+      transparent calc(var(--gap-size) / 2),
+      var(--border-color) calc(var(--gap-size) / 2),
+      var(--border-color) calc(var(--gap-size) / 2 + var(--dash-size)),
+      transparent calc(var(--gap-size) / 2 + var(--dash-size))
+    )
+    top center repeat-x;
+  // linear-gradient(90deg, var(--border-color) 100%, transparent 100%) top right no-repeat;
+
+  background-size: var(--dash-size) var(--border-weight),
+    calc(var(--dash-size) + var(--gap-size)) var(--border-weight),
+    var(--dash-size) var(--border-weight), var(--border-weight) var(--dash-size),
+    var(--border-weight) calc(var(--dash-size) + var(--gap-size)),
+    var(--border-weight) var(--dash-size);
+}
+
+.my-border1 {
+  margin-top: -25px;
+  width: 50px;
+  height: 25px;
+  border-top-left-radius: 28px;
+  border-top-right-radius: 28px;
+  border: 3px dashed #7a7a7a;
+  border-bottom: 0px;
+  position: relative;
+}
+
+.my-border2 {
+  // margin-top: -25px;
+  width: 50px;
+  height: 25px;
+  border-bottom-left-radius: 28px;
+  border-bottom-right-radius: 28px;
+  border: 3px dashed #7a7a7a;
+  border-top: 0px;
+  position: relative;
+}
+
+@tailwind utilities;
+
+/* Add the lines below for Masonry Grid */
+@layer utilities {
+  @variants responsive {
+    .masonry {
+      column-count: 1;
+      column-gap: 4em;
+    }
+    .break-inside {
+      break-inside: avoid;
+      margin-bottom: 50px;
+    }
+  }
+
+  @screen lg {
+    .masonry {
+      column-count: 3;
+      column-gap: 2em;
+    }
+    .break-inside {
+      break-inside: avoid;
+      margin-bottom: 50px;
+    }
+  }
+}
+
+.prospect-menu-icon {
+  transition: all 500ms cubic-bezier(0.87, 0, 0.13, 1);
+}
+
+.prospect-menu-icon-open {
+  transform: rotate(0.75turn);
+}
+
+.prospect-menu {
+  max-height: 0px;
+  overflow: hidden;
+  transition: all 500ms;
+  margin: 0px !important;
+}
+
+.prospect-menu-open {
+  max-height: 500px;
+}
+
+.active-prospect {
+  border-left: 3px solid green;
+}
+
+.text {
+  display: inline;
+  width: 100%;
+}
+
+.read-or-hide {
+  color: rgb(9, 124, 255);
+  cursor: pointer;
+}
+
+.video-wrapper div {
+  width: 100%;
+}

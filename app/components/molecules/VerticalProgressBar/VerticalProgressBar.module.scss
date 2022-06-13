@@ -1,0 +1,19 @@
+.checkpoint {
+  position: absolute;
+  top: 50px;
+  transform: translateX(-50%);
+  left: 50%;
+}
+
+.progress {
+  background: transparent;
+  box-shadow: 2px 2px 10px rgba(82, 72, 124, 0.1);
+  border-radius: 5px;
+  border-style: dashed;
+  border-color: #7a7a7a;
+  border-width: 0px;
+  border-right: 6px dashed #7a7a7a;
+  // width: 4px;
+  height: 100%;
+  transform: translateX(-50%);
+}

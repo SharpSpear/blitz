@@ -1,0 +1,20 @@
+{
+  "projectId": "",
+  "baseUrl": "http://localhost:3000/",
+  "testFiles": "**/**.spec.ts",
+  "integrationFolder": "cypress/integration",
+  "watchForFileChanges": false,
+  "waitForAnimations": true,
+  "numTestsKeptInMemory": 10,
+  "defaultCommandTimeout": 15000,
+  "requestTimeout": 15000,
+  "failOnStatusCode": false,
+  "video": false,
+  "videoCompression": 0,
+  "screenshot": true,
+  "chromeWebSecurity": false,
+  "retries": {
+    "runMode": 1,
+    "openMode": 0
+  }
+}
